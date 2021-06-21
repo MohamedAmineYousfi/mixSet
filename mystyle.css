@@ -1,9 +1,15 @@
 #header{
+	margin: auto;
+border: none;
 width: 500%;
 height:60px;
 background: #2F2F2E;
 }
 
+
+#title{
+	color : red ;
+}
 
 body {
 	color : red ;
@@ -11,6 +17,19 @@ body {
     width: 50%;
   /*  padding: 10px;*/
 }
+.addMore{
+  border: none;
+  width: 45px;
+  height: 32px;
+  background-color: #eee;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+}
+.addMore:hover{
+  border: 1px solid #888;
+  background-color: #ddd;
+}
+
 
 #best {
 	color : black ;
