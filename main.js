@@ -2,27 +2,34 @@
 	console.log("linked")
 		$('.sin').hide();
 		$(".list").hide();
-
-	// $('#btn').on("click",function (){
-		
-	// 	$("a").attr(,"http://www.google.com")
-	// }) 
- 
-
+		$("#about").hide();
+		$('#lastone').hide();
+		$('#hits').hide();
+         $('#news').hide();
+//
  $('.addMore').on("click",function(){
- 	$('.sin').show();
+ 	    $('.sin').show();
 		$(".list").show();
 		$('#first').hide()
 		$('#btn').hide()
+
  })
+$('#abt').on("click",function(){
+ 	    $('#about').show();
+ 	    
+ 	})
 
- var Pass =  $('Password') 
-function checkMyPs(Pass){
-	
-if (Pass.length >8 &&  Pass === utilisateur[unser] ){
-
-}
-
-     }
-
+$('.active').on("click",function(){
+ 	    location.reload();
+ 	    
+ 	})
+$('#contact').on("click",function(){
+ 	   $('#lastone').show();
+ 	    
+ 	})
+$('#newbt').on("click",function(){
+ 	   $('#hits').show();
+       $('#news').show();
+ 	    
+ 	})
 

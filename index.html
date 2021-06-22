@@ -5,26 +5,34 @@
     <title id="title">MIXSET.com</title></div>
 	<script src="jquery.js"></script>
 	<link rel="stylesheet" href="mystyle.css">
-
+	<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a id="newbt" href="#news">News</a>
+  <a id ="contact" href="#contact">Contact</a>
+  <a id="abt" href="#about">About</a>
+   </div>
+	
+  
 	<title> MixSet </title>
 
+
 </head>
-<body>
+<body id="bd" >
 	<h1 id ="Mix">MIX SET </h1>
 	<h2 id ="best">The Best Place To Share Your Music </h2>
-	<p style="color:red;">
+	<p >
       </p>
-	<img id ='img' src="C:\Users\YMA\Desktop\rp-starter-master\rbk-basic-each-dom\my Second page MIXSET\mixSet\assets\LOGOF.jpg" />
-	<div id ="first">
-	  <label for="fname">User name or E-mail :</label>
+      <div id ="first">
+  <label for="fname">User name or E-mail :</label>
   <input type="text" id="username" name="username"><br><br>
-  <label for="Password">Password:</label>
-  <input type="text" id="Password" name="Password"><br><br>
+
+  <label for="Password">Password (8 characters minimum):</label>
+  <input type="text" id="Password" name="Password" minlength="8" size="8" required><br><br>
 </div>
 	<button id='btn' type="onClick">Connect</button>
-   
-<p>If you haven't an account , you should make one .</p>
- <button class="addMore" type = "onClick"> Sign Up </button><br><br>
+	<p >If you haven't an account , you should make one .</p>
+ <button class ="addMore" type = "onClick"> Sign Up </button><br><br>
+
 <div class ='sin'> 
 
   <label for="fname">First name:</label>
@@ -37,24 +45,105 @@
   <button type="reset" value="Reset">Reset</button>
 
 </div>
+   
+	<img id ='img' src="C:\Users\YMA\Desktop\rp-starter-master\rbk-basic-each-dom\my Second page MIXSET\mixSet\assets\LOGOF.jpg" />
+	<div id ="news">
+<p >
+	NEWS <br> 
+	This is a dynamic list and may never be able to satisfy particular standards for completeness. You can help by adding missing items with reliable sources.
+The following is a list of music albums, EPs, and mixtapes released or scheduled for release in 2021. These are notable albums, defined as having received significant coverage from reliable sources independent of the subject.
+
+For additional information about bands formed, reformed, disbanded, or on hiatus, for deaths of musicians, and for links to musical awards, see 2021 in music.
+</p>
+<img id="hits" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYVEhgVFhUZGBgYGRwcHBkYGRweGRwfGBwZHB0cHhwcIS4lIx4rHxoYJzgoKy8xNTU1HSQ7QDs0Py40NTEBDAwMEA8QHxISHjQrJSs3MT0xNDQ0NDQ0NDc0NDY0NDY0NDQ1NDQ0NDQ0NDE0NDQ0NDQ2NDQ0NDQ0NDQ0NDQ0NP/AABEIALgBEgMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAAAgUBBAYDBwj/xABBEAACAQIEAggEAwUHAwUAAAABAgADEQQSITEFQQYTIlFhcYGRBzKhsRTR8CNCUoLBFWKSorLC4SQz0lNjcnPx/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAJxEAAgIBBAIBAwUAAAAAAAAAAAECETEDEiFBUWEiBBMyI4GR0eH/2gAMAwEAAhEDEQA/APmKS3wiMEsRz0HdpK9MaR8qKvoSfcyX4tzux9NPtOKcW+Dri0i4Vbbm3nJiqo538pSLUnstSc70jVTLf8SOQ94OK9PKVi1I6yR9pF/cN5mvsbzXqNNdqkicQe+/nNI6bIczNR5qu09GrA7i3lPJrHYj10msY0ZyZ4uZ5NPd0PdPEiaozZAzFpK0xaWIxEzaLQAxMSVotADETNotADFotMxaAGLRaStFoARtFpK0WgBi0WkrTFoAYtFpm0zaAEbRaStFoWOiNpm0laLQsZG0SdoiAr80FzEi03RgzOcxnP6MjEqkTbJdYe8+8dYfH3kYipBbJZz+jGcyMR0gtks5nvhqRchQQGO2YgA+p0HrNaewp6A39eQ8D3GDSGmzDllNjcEcryGcz1DW0YXH1Hkf0JF6fMG47+7zHKFILZDPGaRiFIVslmjNMEWmIUgtks0ZpGIUgtks0ZpGIUgtks0ZpGTp0yxsBck2AGpJOwAG5hSC2YzT2p0yRmJsvefsBzM3MTglw5tVs1Sw/ZqbgXF+2w2OvyjXTW0r6tQsbk+Q2A8AOQizgdsw7a6Xt47zGeAvfImOkK2SzxnkYhSC2SzxmkYhSC2SzxnkYhSC2SDGZzSIkomikM0REQxItJSJjQngjERKIEREAEREAEmrkbGQiAHurA6H25encZixBupPlz/5E9KGGzAG9rmw0nW9HuhYxQIWuAQLkMALW7iTM5TjHJcYt4OLbU7W+0xadbiui6ITarnZb6WAv63lbiOGoosXvyBFuXr+rQWrF4G9NrJSqpJsBc+Ez1ZvaxuN/SWdHDKrXVyD39n857DA0muWdrk3J7PPwjchUUgF56Cl3kD7+wnQYXhuGLXFV1NtBlUgm1t7zpuB/D3DYi1sU63F+0i+28T1YrIKDeD56rUx+6zHxNh9I7DaBcp5a3HkbzseM9EsLh3KnEVCR3IltP5pS4jAYZX7FV3XxCLfw0Y2gpxfKBxa4ZUYbCs19go+ZmNlHn4+A1m6eILSUrhwQSLNWb/uN3hR+4vlqeZ5TOIoqx+YhRsLrYX9d55pgE5v9V/OG5diorQLyYAH6+0tBgUNv2lv8OnoDK7F0sjEXv485SkmFHiTIxEokREQAREQAREQAyJOQEnJeS0IiIhiRMlImNCeCMREogREQAREQAzMTIEtOHYNSczKzqoJKLcEjzA01ibodCjjHRVCPoQrFbAjN2gNDzt95s0+k1dPlcD+RPymEWmoAdTmHdc2tpY67iYNHD/wt/m/8pm1F5RSbWGBxurUazPbfZFH2nsKz5xSDAEkDVVsCTqSTsNZ50VRWDIjAjwJ+5m9hTlZXAIJuSFKhtLnblr32vJaXSGn5OifhlOkgV0atVCnM9N0Wihy3HbYanwtOewDtVW5TKBu+U2HgNLE/nzlzwbiFLU1mrKQ5yZEVl7WpvmI7XpLI8WwxDAviCeQ6tLEEm1zfu8JzqOorx/Jtuhx/RS1MCAMyXJ5ba/8yJNSmA4YgtoR2RbxJ7vDvMtaeOwQ1BxCjXUICb5tNC1p7f2vhrh71Q50sKKEBedieevdEoanbTLepDpUVAzVKLu7Wy3toLtbfW4A2lBSqsTo627yR9t728xedc2MwlVWWq2IynQhEGuug+YaWt9pU1PwqkpToOynQF1VW7XeTe2+95pCMop2ZzlFtUVzYWrc25anTUCxY5gBsFF7iearUDEMzLYXvZSBbVttGAFhodzLzFcbqU0SkuXIlsuXK1rC2rK1+fPeVeIx6tfOuhteysNjcG4be+spbvQm4lPXx7hrZ29LWkeJu7BGYWugy+NtCfpN4rh9yhv/AD/+cjelnU9WCgB0uwI7iTc6A8psmjMoYmxXpgEkEWJ5X9tZ5ZNLzSyCEREBCIiACIiAGRJyAk5LyWhEREMSJkpExoTwRiIlECIiACSUayMmlr67eG8ANzDVLIwCqcxGpGosc2nsPS87fg3F6eG4dUQKetrpYMNu09nF+Vkv62nC0rXFhdb6k6H1AJm1jsUGpoo/czAeRN5nJO0aRapm7gkq1SURFbLpz1ve1vaetPCuaJqtkUa5V3ZirBT4DnueU1MBjFTUMynLYlWYHbbcc5FsQlrG1v8A5N+cVOxcG1URlfLYFlzXtYgWvex955pVe5OXUDl3n9GSo4gZGIN+ZOvLae+Bw7uCw7Xrpf10kN1kaV4OgwvCCcMlZqws4JKjcWNrWMsqvAKQpq618/ZzMuXbS9tvCUDPWWiKeVLqQQwa778jciVtTHVVBJZha99drE7+0yW6WGaNxjlHTBKbsiKbDN27BbgFHYWYg8175DD8KSo+VKoQWJJcryt/CPGaLUmyC1RySoa9rNqAcu+wM1uF1y9UUi7EkEkACwtfcsNdeXjBN03eA48FlhcAhYK9VDcC2UgG5NtbiRx1FEfIXLHa+ZfPYjadNgOEZmW7XX9698x7strAeNwZpV8NTXi2Gw5yPSqX7OhKsFYBSRrqbSFqqUqV4G1S5RS1OHU7Ld/nGlwvhv7zd4pwfDJgBiKTu1XLqhCWDDQjQXsNefKfTeJ1sFgKYqVVSmpOUEJc33toCeU4Dpf0uw2L6mnh2LAvka6Mos7Kuh05EwjOb6J+JzvC+j2JxFBa1NVbOCVUBRsStizaA6GVHH+FYrDgfiKGRT8pBBUnuLIbX859h6Q8VGBweenTBWmERUBygDQfQTzx7LjMERbStSuAeRZcy+oNpEfqZJ21w2NwT4OZ490VbEMj0qdNUCKbE2JsiZQoXS+jb6beM5vjPQOrSw74jOrEWY01U3AO4vfcA/SdN0S6U1a9QYepTVclEWIJJJp5UN+6eXT/AIxiKS00oNYVVcPYDMbZdBfwY6c5UdXV+4ouv8Bxjts+TlCPtfl7zzmylcq1wLd68j4WM98RhQV6xB2Tuvd3z0LMKK+IiMQiIgBkScgJOS8loRERDEiZKRMaE8EYiJRAiIgBmblPBEhW2Vmy5jsG7iYwCAsQygggqCSRZjsfOblNVVWosc2ZQ6kXAVxvod9BaS2UkWXRjojUxTsLWVN2Hfc/lfynT4boZhqdF0rgtUDsAyOfl2XTYXGuonr8OuLv+FrgnU1VJAAAHYC38zlHtKCvxhaPEMQXzZXA211AWxt7+85JSnKTing2iopJtFLjuEBMSKH8bAKxvqGJCk+Oms6rEilQQZlCqtlvl17rm3lKHi3GKdWrQdcw6tgWLC2mZT3+c6/pPwwuj01tdiMpO29wb+UU5P47uPI4pc0VuIwiVF7IUki4bTlqNZpdHWzUGXTsVWA77NY7chv9Zd4fCpSpqHOZKaqHOwNgA1vAnQeYlb0LQOuKFhdWR78yGDDfuv8AeQpfGXqiq+SNLGY9lcotMMFtdi9t/CV/FK2ZXcgAtbb+UHT9bzqa/DEZiSDcjWx056277aTm8Vhv2nVkdlnVNfFgoubbgAHTwmmnKLwRNSWS8r1AxzAghrEEbEHa0p8dh2St1yOyMwJumh7Wja+d/edJxXDrSYInZph1pi+uhzKoufEL7Sn49QbqVzXCI5ue/OBofVfvJhLlexyR9A+GwNfB02JLHtKxYkm4Yg6n0nzWkwocUp206vGAEDwq2M+jfBjHKuAqgkdiuwHfZlUz5n0ybLxKvkAA67ODse0Q2/mZWnCMZyXmyHJtJn2D4i4B8VhurpgF1dWGYgDS4O/hPkPHODVcKKZYKW+YBCWHYI+bYe3jPqHSvi7UqTuliyoGAOo5X2nzLG8XfEhWrlRa+VlHY1sSrXuQdN/6azPQ3t9VZUoxS9nf8O43Rx+GKmxzJlqId1JFj6b2MoeI8GxNNR1WLrNTQWFPOVKqosALWDADl4Sow3RrQV1rZOznBpg3+W43IG+86XopxJquGD1T2gzKbWuxXme7lIcdlyg+PBaW7hrk5boPWX+0VCt86VF177ZvqRLz4lUy2FRh+5VFzz7am31Eo+H5aPHEuLL1ug/+xTb0u06zpMVbCVbi4DoP8TZf6y5utaMl4Jivi0fNKaiuhv8A9xef8Q5X8eUhwqsVZkPPl4jf9eExS/ZV7DY6DyO31jGdmqrDmdfsfpO70YmrjaYVyBtv5XmvNrH1CXIOw2mrKWCWYiIjEZEnICTkvJaEREQxImSkTGhPBGIiUQJ6UqZYhRznnNzhps9/CDGiWOsrBF2UfU8z47TaOGJAB+cWJ8CbaefOeFDtVyTyN7eWg/pLU1lc5lUKCdgSdhqbnWZzdVRUUdH8OKeYYtNrCm31ZT956VeG0nxzq6K5NJGGbvDMGyi+ugF5rdCcRkxrpe3W0NB3lWvb2BlxxfglepjMNVpJdUuGa4AUXJ1vysT7zhk/1HzVo6I/j+5z3TXAImHQoiLZwCVUA2KtzHLSdjxF2OHWqti3UIwB2JyA+00fiBg1GAcjUqyEkbC7BfX5pvdHmFXAUD/7QQ/yDKftIk70030xriTrwVPAMScXh8zqtySpAHZNvAyt6EKaOOr0OTUWB/kYWmz8O8QmSpRLDMKjFV2JUgaj1BnvTdaPGszMqo6MuZmAHyKd++4lt1KUUuib4TNTpdnR0tUdBlJyqxUMQdb230t7yn4SQ+Kw6fNmrqxvq25Pf/dv6z6NiOI4DODUr0Cy7XYEi/d6iUPSvjuFNXC1aFTOaFdS7IpsENs2ttdO6GnOTW3b55FJK7s6PiFPD4dBVxDhELWFwSS2pAAA33M9+M4bC4vhrLRdWWqOw4uAGU6XB1BuLG/jOP8AiV0swuLwqU8OzuyVLlmQqtipB+axvqOU5zo10jahSagUZ1LBlswGW/zb+kI6Eox3L8hOdunguOgjMmDxN9MtZARzuVa4/wAs5zpUhaqXse0gN/IkH7TewPE6gxFenToh/wAS6tkzEWZc+1t7lz9J58bSs4VXRKZQMuRSxYXN2zZidb8puotT3PsTkttHUPV6yiik3D0kBI/vIBzmjhuhqinUKGo3Ya97ZeypIvYcpzuCx2IbKnXZQoVVyqoNhYDW1zaZ4hXrfKcRVZDuC5yncA2XQ8pMdNxdJjck1dHRdD+kFI4cUGAFVRlGb5WXYZf71tNZuYerRpHIhVbvqqm7Fjvpe95yvRrh1OuVWooYK4U2NjlYjmvdrPo/DuidOkP2dMKSu+5OU951hPTjufIlNpHzjpFS6nHJV1yllcE72VrH7fWXHGulWHbDVqKlmaoEKsFsoZWDa31tym38VOGdXRoPb9909wjD/QfefMmmq04ypvojc1a8ljxA9pT4/kZjiI0XznlilIZV56fW09eKE5wv/wC900XRJDFgZc3O9j/z4zRm9j0UAWte+vftuZoy1gTMRERiMiTkBJyXktCIiIYkTJSJjQngjERKIE9KJOYW7xPOeuHfKwMGBt4M9t/1zmzhnPauQbX05203/XKaNN8rgtz3tNtOxVINrN9jofz95nJFovqGFrtiKbYcAVUuVBtlOhYgk6ai41tL3pP0h4l+CZamGSgjDK7pYsbm1iMxyg6Cc+9R6fVEmxSol9T2srAAG3Kxv6z6B09wxbh9e3IK/wDhdSfpeccpVKKaWTVK0znzwziGLweRnoLTampAUMWYIAy3J2PZWVPQDgz4hauXE1KQTLdUO+a+v0n0noQubA4c3vekBc94BWcf8H7LisZSO+QWtt2HI/3SVN7JpUq9A6TTNA9DqS8Up4VmcrUpMwbMA2bt7nb93bxnUr8NsO3VBndghOcNu4tsCtsuoHfOc+L9JqeKoVFYqWpkAqSCCjd48GnZ/CSsX4ctyxKVHViTe9yGuPCzD6xTc3pxmmLhNqjm+KdF8K3E8NhqKoKbqS+Q5iOrzFrm9wbADXvneY3iuD4c1DDlAnXHKgRQVFrLdj5kDnvPlGHxq4HjuZyFRMRVViOS1C2p8swM+kdOeA/jUpVKLqKtFg9Nm1VgbNYka2NgbyppKt74oFzgoPixwRGw/wCIRArowzlRbMrHLqBzBIN58qotY+x/Ledj0j49xAq9DFKqK627KaMOZDXM4pbjTmNDv7/ebaKajTZMsljhcRkcONDyP8PjptrbXlOgr8YLqFfEAUQcxpZL1WJHaUWW2puMxa2vpOewtMN3G/l/xN7+ygdQWtpodRufPxlOuxq+iuWp2rjS5JGp0zHa5GwtM4mpmI8SPz3E2Xw4UafTx8vDwla7XII1N7DvJOmnOUuSXwdX8Pad6tQ8syj2N/6zs16Sb2b+ID1M5rgdD8PhCx+dgbebX+1/ZZTFGXYmSlubY26pFz8RuJ9dh6ak3tUJ/wAlv904PhRXrgzKGRTmYG9rL4g37pZdIapyU1Y6gMf8Vv6KsoA5AIvobX9JrBfEmWToejOAONxwvoqhqrnkqUxfU92gHrNKkhxGMsmoLkjT91Lm/sPrM4XiopYWpSp5g9c2qNoB1a6hF1v2iSW22Am/0cxNPDYevXYE1aiGjQUd7fO58ALDzMpomyhxosxXQ5bgkd5N/ptNWDEpAIiICMiTkBJyXktCIiIYkTJSJjQngjERKIEzMRADbbM6knXKL3+/01llgqBxFI5Na1EXyg9pkHzFe8gXuO4Su4djDSqBrZhsynZlO4M3MdSFF1r4eoxQ2ZHvZ0YalHts49iNRJoZu1uMLXwuR7LVpWyNrZ0BFlY/xryPMXG+/wBqpYZMThArXyVaS31sbOovr3z8/F+tqG6gFtTl0sbXLWOltydvSfoTgNFG4dSVWzIaAUMBa/Yy3APjOH6yHEWvJrpvJs8E4YmHpJSpXyJe1zc6m51nzHoR+y6QVqfJmxCW8iWH2nRfBxv+lroTqlc776qv9QZSOvU9KVJawapff/1KZFvK8z04uMpxbvgcnhm98bMIeqw1Sx0d1P8AMAR/pM3/AIGP/wBHiFOy1gfdV/KWnxgwubhmYEApVRjfxOT/AHTlvgniGDYpL3W1NrabnOL+wHtNV8dCn0TmRz/xBwGbjNVcpPWMjKq7sGCjS+gJIMscIOJcMpNUaz4ZCoNN3BZVZgosAeybsPCevxMqdTxXDYjNewpvbuFJySPW5953mPo0cbhnXPmo1kHbUi9rhlINjqCBoRytFPU+MbSaeSox5dZK/imDGMw5QC+dAyG17FgGUj6T4tkzE3srKbeVt1P1n2vGYtMLhgqsVSnTVVLEZ2CKFXXv0G0+QYmmGNySHubnS8PpqVpYHqdWeFKqyEXuuvmp8rzdTihA/d87EbLYfL5k/lPAI6dzAi91O47yDJ0WUnVDcb9hb/adDSZCPCriGqGwBfwFrDuueQ85bYDgbhDVJUPplDXyjXYc7kX19u+b/CsWguDTs9jkzEWDDmy8lGuo1na8DwyWzORUbXtsLU0uLEoO/wBSfERNvC4Q+DmuIVrqiaFgozZflDW1A8BPHA4M1HyjYAlj3Aaky641wTI5Kg2bYnn3eUp+P8UTBYV6CNfE1bAlCCqpzue88vK8rC2xIy7ZxHSHE567W+VTlH69LekqpkteYm0VSolu2YnrVqFrXN8osPAC5t7kzyiMQiIgAiIgBkScgJOS8loRERDEiZKRMaE8EYiJRAiIgAmQZiIAegfSw57+M+3dAOk+FpcNpLWxFNHXOpVmGYAMbdnfafDomWpprUVMpOj6f0F6WYXBVsYKrko9XNTKKWzAM+vhoVlJ0r6T0q3FaeMohiqGmSGGUk02uefMTi4gtKKbkG5n1fpD0/8A7Rw1agmHZFsrFme5GVgRoB4TjujvHK+CqO9BEYuoU5wSBbW+hFvUyjwWKNNiQAbixDXtr3gEXt4zrA5QAZEpjTVrmoQUF8uYXsR/Cg33mUoqFqrTNI8njx3HYjG2fEZRkBAyqV0Nm2NyeX1lTg8TWpKwo1nVTcnIxCm1rm19Dv7TocTiaQR8iX0bVnJa+QC5INvQtOep5moC5sLPqTudLgD22HrFpu1il4HJcmF4kza1GZyTozG9gOQud5ZUcPnH7Nr23UbjzXcSiSjcJ3sbcvD29SJ7cRwrUirAFblsrA6GxHykd22l/ObcXSIp1ZZBbsQfLa1t9h9ZF12H6t+rTWocWxJRjmzqu+dVYC+g1cE38jeYqcWcAXRNUsDk12tudz4w29C9lph6RzCzAWtvtcW29bTo8J0iFEEubsPlBsb+23/M+fnib5SA2XXZQBe++wng1exGl+/fWG0LOq4904rVuyDoL5bbLcn3PKcdVqFmLMSSTck7kz1cDMCBo3vrv7GeDCxlxilgluyMREoQiIgAiIgAiIgBkScgJOS8loRERDEiZKRaNCeCMREogREQAREQAREQAREQAkN52XDOHvUorWcoFdmAubL2VG+bntyYmcXOq6NcSqEGkoUKFZjlBDtdSNXuCFAvpmUa85jrJ7bRcHTLWiiOCVZSMr2ZQTtTtoCM9rjcBR4yq4dhUOFzsbDK+25IAtc9lefNie5ZscIcDCDMQFOf5tFvlGt27N722DN5TR4ZiFNEooJZUqEkA7EDS4uf9I8TMIpq14Zq336NR6gSjQYDUMzXubmxFtzpbwX1MlxyuaiU6h3cuTrc3uDqTcnfmfQTa4rVP4HDfINag7K6782y68v3ifKUVXEswVWYkKLKCdFB3sJ0RjdP2ZuXDRYcOS+HrnuVfPfwUm3qo85XVqxawNrKLCwt795mFrMFKhjlOpF9Dba45zylpU22JvhIXgmYiUQequQLe3h4ieURABERABERABERABERADIk5AScl5LQiIiGJFoiNCZGIiUQIiIAIiIAIiIAIiIAZnQ9D6ZauQCAcjWNr7A7AKxv5C/iN4iZa34MuOTzxDp+BRcy5zUuVuM2ULobBSba828llZhsWyBgtu0LG4vYeA2v4xEqMVQPJ6YjEK1JFF8y3uSBax2AO/2E0ZiJSSoTEREZIiIgAiIgAiIgAiIgAiIgAiIgBkScRJeS0IiIhn//2Q=="/>
+<ol id ="ordredlist">
+<li> The Weeknd - Save Your Tears</li>
+<iframe  width="560" height="560" src="https://www.youtube.com/embed/XXYlFuWEuKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+<li> Hold On -Justin Bieber</li>
+<iframe width="560" height="560" src="https://www.youtube.com/embed/LWeiydKl0mU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+<li>My Head & My Heart -Ava Max</li>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w8mBplMtwJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+<li>Your power -Billie eilish</li>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fzeWc3zh01g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
+<li>Don't let me go - Ovylarock</li>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TUmqoMljBDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
 
 
-	
-	
-	<div class = "list">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<span class="heading">User Rating</span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<p>4.1 average based on 254 reviews.</p>
+<hr style="border:3px solid #f1f1f1">
+
+<div class="row">
+  <div class="side">
+    <div>5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>150</div>
+  </div><br><br>
+  <div class="side">
+    <div>4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>63</div>
+  </div><br><br>
+  <div class="side">
+    <div>3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>15</div>
+  </div><br><br>
+</div>
+
+
+
+
+
+
+</div>
+<div id="about">
+<p > 
+	This WebSite was developped by Yousfi Mohamed Amine in 2021,using the Java Script and JQuery .
+</p>
+<img id="yam" src="C:\Users\YMA\Desktop\rp-starter-master\rbk-basic-each-dom\my Second page MIXSET\mixSet\assets\ami.jpg" />
+
 	<ul> 
 	<li>Create an account first </li>
 	<li>Put like to our SoundCloud  </li>
 	<li>Publish it with your friends  </li>
 	<li>Rate our service </li>
 	<li>Thank you for visiting our website </li>
-
-	
-	
-
-<!-- <button id='btn1' type="button">Go to SoundCloud</button> -->
-<a href='https://soundcloud.com/mohamed-amine-yousfi'>GoToMySoundCloud</a>
-
+</ul>
+</div>
+<div id ='lastone' class="exemple_multi_ar">
+<p id ="lastp">MIX SET <br>
+Follow us on : </p>
+<img id="logodjyam" src="C:\Users\YMA\Desktop\rp-starter-master\rbk-basic-each-dom\my Second page MIXSET\mixSet\assets\djyamlogoinstafbsc.jpg" />
+<a id = "last2" href='https://soundcloud.com/mohamed-amine-yousfi'>GoToMySoundCloud</a>
+<a id = "last2" href='https://www.instagram.com/yousfimohamed/'>GoToMyInstagram</a>
+<a id = "last2" href='https://www.facebook.com/medamineYs'>GoToMyFaceBook</a>
+</div>
 
 <script src="main.js"></script>
 </body>
